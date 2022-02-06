@@ -1,0 +1,277 @@
+.editorWrapper {
+  position: relative;
+  width: calc(100% - 10px);
+  height: 100%;
+}
+
+.editorWrapper__button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.5 !important;
+}
+
+.editorWrapper:hover .editorWrapper__button {
+  opacity: 1;
+}
+
+.react-resizable-handle {
+  display: block;
+  background-color: #37414b;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.react-resizable-handle-s {
+  height: 10px;
+  width: 100%;
+  cursor: row-resize;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+}
+.react-resizable-handle-e {
+  width: 10px;
+  min-width: 10px;
+  height: 100%;
+  cursor: col-resize;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+}
+
+.resizibl {
+  /* display: flex; */
+}
+.resizibl_hor{
+    display: flex;
+}
+.editorWrapperka {
+  display: flex;
+  height: 100%;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.iframeWrapper1 {
+  height: 100%;
+  position: relative;
+ flex-grow: 1;
+ 
+}
+
+.react-draggable-transparent-selection .iframeWrapper1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+
+}
+
+
+
+.previewError{
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.textEditor .w-md-editor-bar svg {
+
+display: none !important;
+
+}
+
+.textEditor .w-md-editor-bar{
+
+  height: 11px;
+  width: 100%;
+  cursor: row-resize;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+background-position:50% ;
+background-color: #37414b;
+background-repeat: no-repeat;
+}
+
+/* burdan basdaddi copy ler */
+
+
+
+
+
+
+.w-md-editor .title {
+  line-height: unset;
+  font-size: unset;
+  font-weight: unset;
+  color: #d4d4d4 !important;
+}
+
+.w-md-editor ul {
+  line-height: 1;
+}
+
+.textEditor .w-md-editor-bar svg {
+  display: none;
+}
+
+.textEditor .w-md-editor-bar {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  height: 11px;
+  cursor: row-resize;
+  background-color: #37414b;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.textEditor em {
+  font-style: italic;
+}
+
+.textEditor .wmde-markdown hr {
+  border-top: 1px solid #dee5ed;
+}
+
+.textEditor .wmde-markdown ol {
+  list-style: decimal;
+}
+
+.textEditor .w-md-editor-show-live {
+  /* Hide menu bar buttons to prevent accidental delete */
+  z-index: 20;
+}
+
+.textEditor .w-md-editor-toolbar {
+  background-color: #37414b;
+  border-bottom: 1px solid gray;
+}
+
+.textEditor .w-md-editor-toolbar li button {
+  color: #d4d4d4;
+}
+
+.textEditor .w-md-editor-content {
+  background-color: #202123;
+}
+
+.textEditor .w-md-editor,
+.textEditor .w-md-editor .w-md-editor-text-pre {
+  color: #d4d4d4;
+}
+
+.textEditor .w-md-editor-text-pre .bold {
+  color: unset;
+}
+
+.textEditor .token.list.punctuation {
+  background-color: unset;
+}
+
+
+.textEditor .language-markdown{
+  color: white !important ;
+}
+
+
+.relative{
+  position: relative;
+}
+.actionBar{
+  position: absolute;
+  width: min-content;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+}
+
+
+.actionWrapper{
+  position: relative;
+  height: 30px;
+  background-color: #37414b;
+}
+
+
+.celWrapper{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.celAdder{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease-in 0.25s;
+}
+
+.cellAdder__divider{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 2.5%;
+  left: 2.5%;
+  z-index: -1;
+  border-bottom: 1px gray solid;
+  width: 95%;
+}
+
+
+.celAdder__button{
+  margin: 0 30px;
+ }
+
+ 
+.celAdder:hover{
+  opacity: 1;
+}
+
+
+.celAdder_forced{
+  opacity: 1;
+}
+
+
+
+.progress-cover{
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  animation: fadeIn 0.5s;
+}
+
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.wh-bgc{
+  background-color: white;
+  flex-grow: 1;
+  height: 100%;
+}
